@@ -1,0 +1,35 @@
+To run API, ADD, modify, Check list, get and id, Delete through the command line
+
+1. Add to rest API through the terminate
+
+curl -X POST http://127.0.0.1:8000/api/BookManagement/ \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "title": "SQL Book Title",
+        "author": "Joe Name",
+        "published_date": "2024-01-09",
+        "isbn_number": "22774847443"
+        }'
+
+2. To modify and API and providing the ID number
+
+curl -X PUT http://127.0.0.1:8000/api/BookManagement/3/ \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "title": "Life of Api",
+        "author": "Mary Lucky",
+        "published_date": "2021-04-09",
+        "isbn_number": "39774847043"
+        }'
+
+3. To Check the list of the API
+
+curl -X GET http://127.0.0.1:8000/api/BookManagement/
+
+4. To Get a particular and ID number
+
+curl -X GET http://127.0.0.1:8000/api/BookManagement/2/
+
+5. How to Delete of the API
+
+curl -X DELETE http://127.0.0.1:8000/api/BookManagement/4/
