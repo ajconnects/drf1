@@ -33,3 +33,11 @@ curl -X GET http://127.0.0.1:8000/api/BookManagement/2/
 5. How to Delete of the API
 
 curl -X DELETE http://127.0.0.1:8000/api/BookManagement/4/
+
+
+curl -X POST http://127.0.0.1:8000/ \
+    -H 'Content-Type: application/json' \
+    -d '{
+        "employee": "Isaac Joe",
+        "department": "Cloud Enginner"
+        }'
